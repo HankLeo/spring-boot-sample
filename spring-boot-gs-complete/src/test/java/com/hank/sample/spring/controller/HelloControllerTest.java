@@ -1,4 +1,4 @@
-package com.hank.sample.spring;
+package com.hank.sample.spring.controller;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
