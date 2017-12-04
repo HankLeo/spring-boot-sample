@@ -1,17 +1,15 @@
-package com.hank.sample.spring.control;
+package com.hank.sample.spring.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Hank on 11/28/2017.
+ * Created by Hank on 12/4/2017.
  */
 @RestController
-public class SpringBootGsController {
-
+public class HelloController {
     @RequestMapping("/")
     public String index() {
         return "Hello Spring Boot!";
     }
-
 }
