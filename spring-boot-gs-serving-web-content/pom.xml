@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.hank.sample.spring.boot</groupId>
-	<artifactId>spring-boot-gs-rest</artifactId>
+	<artifactId>spring-boot-gs-serving-web-content</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-gs-rest</name>
+	<name>spring-boot-gs-serving-web-content</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
