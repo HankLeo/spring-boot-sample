@@ -18,6 +18,7 @@ public class WebController extends WebMvcConfigurerAdapter {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
+        // used to be redirect view
         registry.addViewController("/results").setViewName("results");
     }
 
