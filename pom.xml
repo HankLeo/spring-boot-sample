@@ -26,6 +26,7 @@
         <module>spring-boot-gs-complete</module>
         <module>spring-boot-gs-rest</module>
         <module>spring-boot-gs-serving-web-content</module>
+        <module>spring-boot-gs-activemq</module>
     </modules>
     <!-- No dependencies - otherwise the samples won't work if you change the
         parent -->
