@@ -17,7 +17,7 @@ public class HelloController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/hello")
-    public Hello hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public Hello hello(@RequestParam(value = "username", defaultValue = "World") String name) {
         return new Hello(counter.incrementAndGet(), String.format(template, name));
         // class Hello will be formatted to JSON in response body
     }
