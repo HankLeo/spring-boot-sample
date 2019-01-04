@@ -1,6 +1,5 @@
 package com.hank.sample.springboot.course.jpa.course;
 
-import com.hank.sample.springboot.course.jpa.topic.Topic;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
