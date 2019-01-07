@@ -21,13 +21,22 @@ public class TopicController {
         return topicService.getTopicById(id);
     }
 
+    /**
+     * deprecated
     @RequestMapping(method = RequestMethod.POST, value = "/topics")
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
     }
+    */
+
+    @RequestMapping(method = RequestMethod.POST, value = "/topics")
+    public void addTopic(@RequestBody List<Topic> topics) {
+        topicService.addTopics(topics);
+    }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
-    public void updateTopic(@PathVariable String id, @RequestBody Topic topic) {
+    public void updateTopic(@PathVariable String id,
+                            @RequestBody Topic topic) {
         topicService.updateTopic(id, topic);
     }
 

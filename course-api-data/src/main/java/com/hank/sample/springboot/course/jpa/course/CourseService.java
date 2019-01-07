@@ -16,7 +16,7 @@ public class CourseService {
     private TopicRepository topicRepository;
 
     public List<Course> getAllCourses(String topicId) {
-        List<Course> courses = courseRepository.findCoursesByTopicId(topicId);
+        List<Course> courses = courseRepository.findCoursesByTopic_Id(topicId);
         return courses;
     }
 
@@ -30,6 +30,12 @@ public class CourseService {
     public void addCourse(String topicId, Course course) {
         if (topicRepository.existsById(topicId)) {
             courseRepository.save(course);
+        }
+    }
+
+    public void addCourses(String topicId, List<Course> courses) {
+        if (topicRepository.existsById(topicId)) {
+            courseRepository.saveAll(courses);
         }
     }
 

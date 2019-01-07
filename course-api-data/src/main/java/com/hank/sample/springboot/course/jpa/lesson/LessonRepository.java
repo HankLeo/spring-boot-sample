@@ -1,14 +1,15 @@
-package com.hank.sample.springboot.course.jpa.course;
+package com.hank.sample.springboot.course.jpa.lesson;
 
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface CourseRepository extends CrudRepository<Course, String> {
+public interface LessonRepository extends CrudRepository<Lesson, String> {
 
     /*
      Do not have to implement the method
      Spring JPA will implement the method with specific name
       */
-    public List<Course> findCoursesByTopic_Id(String topicId);
+    public List<Lesson> findLessonsByCourse_Id(String courseId);
+
 }

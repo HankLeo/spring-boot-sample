@@ -29,6 +29,10 @@ public class TopicService {
         topicRepository.save(topic);
     }
 
+    public void addTopics(List<Topic> topics) {
+        topicRepository.saveAll(topics);
+    }
+
     public void updateTopic(String id, Topic topic) {
         topicRepository.save(topic);
     }
